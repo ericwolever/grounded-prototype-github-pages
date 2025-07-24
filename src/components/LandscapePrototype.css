@@ -1,0 +1,28 @@
+/* Basic styles for LandscapePrototype */
+body {
+  background: #fafafa;
+  font-family: 'Inter', sans-serif;
+}
+.navbar { background:white; border-bottom:1px solid #eee; }
+.nav-container { display:flex; justify-content:space-between; align-items:center; padding:0.5rem 1rem; }
+.logo { display:flex; align-items:center; gap:0.5rem; font-weight:bold; }
+.logo-icon { width:24px; height:24px; fill:#16a34a; }
+.nav-menu { display:flex; gap:1rem; }
+.nav-button { background:none; border:none; padding:0.5rem; cursor:pointer; }
+.user-avatar { background:#16a34a; color:white; border-radius:50%; width:32px; height:32px; display:flex; align-items:center; justify-content:center; }
+.main-container { display:grid; grid-template-columns: 1fr 350px; gap:1rem; padding:1rem; }
+.design-canvas, .plant-catalog { background:white; padding:1rem; border-radius:8px; }
+.canvas-area { aspect-ratio:16/9; border:2px dashed #ccc; position:relative; border-radius:8px; background:linear-gradient(135deg,#dcfce7,#d1fae5); }
+.canvas-placeholder { position:absolute; top:0;left:0;right:0;bottom:0; display:flex;flex-direction:column;align-items:center;justify-content:center; color:#888; }
+.placed-plant { position:absolute; cursor:pointer; transition:transform 0.2s; }
+.placed-plant:hover { transform:translate(-50%,-50%) scale(1.1); }
+.plant-icon { background:#16a34a; width:48px;height:48px;display:flex;align-items:center;justify-content:center;border-radius:50%; }
+.plant-label { background:white; padding:2px 6px; border-radius:4px; margin-top:4px; position:absolute;top:100%;left:50%;transform:translateX(-50%); font-size:0.8rem; }
+.search-input { width:100%; padding:0.5rem; border:1px solid #ddd; border-radius:6px; margin-bottom:0.5rem; }
+.filter-options { display:flex; flex-wrap:wrap; gap:0.25rem; }
+.filter-option { padding:0.25rem 0.5rem; border:1px solid #ccc; border-radius:12px; cursor:pointer; }
+.filter-option.active { background:#16a34a; color:white; border-color:#16a34a; }
+.growth-control { background:#f9fafb; padding:0.5rem; margin:0.5rem 0; border-radius:6px; }
+.plant-grid { display:grid; gap:0.5rem; max-height:400px; overflow:auto; }
+.plant-card { border:1px solid #eee; padding:0.5rem; border-radius:6px; cursor:grab; }
+.plant-card:hover { border-color:#16a34a; }
